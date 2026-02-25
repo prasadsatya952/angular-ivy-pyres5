@@ -1,0 +1,189 @@
+1️⃣ Python Execution Model (Interpreted Language)
+Definition
+
+Python is an interpreted language. Code executes line by line via the Python interpreter.
+
+Key Concept
+
+No manual compilation step.
+
+Example
+print("Hello")
+
+
+Runs immediately.
+
+Scenario
+
+You run a script → Error appears instantly if something fails.
+
+Why It Matters
+
+✔ Faster debugging
+❌ Slower than compiled languages
+
+2️⃣ Performance vs Compiled Languages
+Definition
+
+Python is generally slower than C/Java due to interpretation and dynamic typing.
+
+Scenario
+
+Web app → Python OK
+Game engine → Prefer C++
+
+Example
+sum(range(1000000))
+
+
+Works fine but not as fast as C.
+
+Why It Matters
+
+✔ Productivity often outweighs speed
+
+3️⃣ Why Python is Widely Used
+Definition
+
+Python emphasizes developer productivity.
+
+Key Benefits
+
+✔ Simple syntax
+✔ Massive libraries
+✔ Rapid development
+
+Scenario
+
+Startup building MVP quickly → Python ideal
+
+4️⃣ Procedural Programming in Python
+Definition
+
+Code organized using functions and steps.
+
+Example
+def greet():
+    print("Hello")
+
+Scenario
+
+Small scripts & utilities
+
+5️⃣ Object-Oriented Programming (OOP)
+Definition
+
+Code organized using classes and objects.
+
+Example
+class User:
+    def greet(self):
+        print("Hello")
+
+Scenario
+
+Large, scalable systems
+
+6️⃣ Dynamic Typing
+Definition
+
+Variable types determined at runtime.
+
+Example
+x = 10
+x = "hello"
+
+Scenario
+
+Variable reused with different types
+
+Risk
+x = "10"
+print(x + 5)  # TypeError
+
+7️⃣ Readability Philosophy
+Definition
+
+Python prioritizes clean, human-readable code.
+
+Example
+if age > 18:
+    print("Adult")
+
+Scenario
+
+Team project → Easier maintenance
+
+8️⃣ Code Maintainability
+Definition
+
+Readable code reduces bugs & onboarding time.
+
+Scenario
+
+New developer joins → Understands logic faster
+
+9️⃣ Memory Management
+Definition
+
+Python uses automatic memory management.
+
+Mechanism
+
+✔ Reference counting
+✔ Garbage collection
+
+Example
+a = [1, 2]
+a = None
+
+
+Old object eligible for cleanup.
+
+🔟 Garbage Collection
+Definition
+
+Handles cyclic references not freed by reference counting.
+
+Scenario
+
+Objects referencing each other → GC cleans them
+
+1️⃣1️⃣ Python Portability
+Definition
+
+Python code runs on multiple OS via interpreter.
+
+Scenario
+
+Same script → Windows / Linux / macOS
+
+1️⃣2️⃣ Development Speed
+Definition
+
+Python’s standard library reduces coding effort.
+
+Example
+import math
+print(math.sqrt(25))
+
+
+No need to implement sqrt.
+
+1️⃣3️⃣ PEP 8 (Coding Standards)
+Definition
+
+Official Python style guide.
+
+Purpose
+
+✔ Consistency
+✔ Readability
+✔ Maintainability
+
+Example
+# Good
+user_name = "Satya"
+
+# Bad
+UserName="Satya"
